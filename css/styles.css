@@ -54,8 +54,7 @@ img {
 /* ---------------Hader------------------- */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
     border-bottom: 1px solid var(--accent-color);
 }
 
@@ -65,11 +64,12 @@ img {
 
 .header-navigation {
     display: flex;
+    align-items: center;
 }
 
 .header-list {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .address-list {
@@ -147,7 +147,7 @@ img {
 }
 
 .hero-button {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     font-family: inherit;
     font-weight: 500;
@@ -169,12 +169,11 @@ img {
 }
 
 .our-advantages-section {
-    padding-top: 120px;
+    padding: 120px 0;
 }
 
 .our-advantages-list {
     display: flex;
-
     gap: 24px;
 }
 
@@ -183,13 +182,16 @@ img {
 }
 
 .what-we-doing-section {
-    padding-top: 120px;
     padding-bottom: 120px;
 }
 
 .what-we-doing-list {
     display: flex;
     gap: 24px;
+}
+
+.doing-list-item {
+    width: calc((100% - 48px) / 3);
 }
 
 .team-section {
@@ -205,7 +207,7 @@ img {
 
 .team-member {
     background-color: var(--white-color);
-    border-radius: 4px;
+    border-radius: 0 0 4px 4px;
 }
 
 .card-description {
@@ -278,7 +280,7 @@ img {
 .portfolio-filters-button:is(:hover, :focus) {
     background-color: var(--ocean-color);
     color: var(--white-color);
-    border: 1px solid var(--ocean-color);
+    border: 1px solid transparent;
 }
 
 .portfolio-list {
@@ -311,7 +313,7 @@ img {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
+    display: inline-block;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
